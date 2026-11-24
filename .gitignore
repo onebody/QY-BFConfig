@@ -1,0 +1,43 @@
+# Flutter SDK (managed via scripts/flutterw)
+.tooling/flutter/
+
+# Dart / Flutter build artifacts
+.dart_tool/
+.packages
+.pub/
+build/
+flutter_*.log
+
+# IDE
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+.DS_Store
+
+# Android
+*.apk
+*.aab
+*.keystore
+QYBFConfig/android/.gradle/
+QYBFConfig/android/local.properties
+QYBFConfig/android/app/.cxx/
+
+# iOS
+QYBFConfig/ios/Pods/
+QYBFConfig/ios/.symlinks/
+QYBFConfig/ios/Flutter/Flutter.framework
+QYBFConfig/ios/Flutter/Flutter.podspec
+
+# Logs
+logs/
+
+# Env
+.env
+.env.local
+.env.*.local
+
+# Misc
+coverage/
+.pub-cache/

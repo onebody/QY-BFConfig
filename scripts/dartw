@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+DART_BIN="${ROOT_DIR}/.tooling/flutter/bin/dart"
+
+if [[ ! -x "${DART_BIN}" ]]; then
+  echo "Dart 未安装或未解压到 .tooling/flutter"
+  echo "请先下载并解压 Flutter SDK 到: ${ROOT_DIR}/.tooling/flutter"
+  exit 1
+fi
+
+exec "${DART_BIN}" "$@"
